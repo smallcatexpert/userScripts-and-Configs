@@ -512,7 +512,7 @@ stop_plex() {
             both) backup_notification="Essential & Full Backup" ;;
         esac
 
-        get_plex_tyupe
+        get_plex_type
 
         [[ "${full_backup,,}" == "true" ]] && log "🔻 Plex detected as: $plex_type"
 
