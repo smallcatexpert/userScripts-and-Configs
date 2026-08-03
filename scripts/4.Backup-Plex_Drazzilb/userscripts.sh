@@ -10,11 +10,14 @@
 #                                                   |_|                        |_|
 #
 #
-echo Starting plex-bloat-fix
-/usr/bin/python3 /mnt/fastdrive/userScripts/plex-scripts/plex-bloat-fix.py
-echo Finished plex-bloat-fix
+echo Pulling latest version of image-maid
+/usr/bin/wget https://raw.githubusercontent.com/Kometa-Team/ImageMaid/refs/heads/master/imagemaid.py -O /mnt/user/appdata/scripts/backup-plex/imagemaid.py
+echo Starting image-maid
+/mnt/user/appdata/scripts/backup-plex/python-venv/bin/python3 \
+    /mnt/user/appdata/scripts/backup-plex/imagemaid.py
+echo Finished image-maid
 echo Pulling latest version of Plex Backup
-/usr/bin/wget https://raw.githubusercontent.com/Drazzilb08/userScripts/dev/scripts/backup-plex/backup-plex.sh -O /mnt/fastdrive/userScripts/backup-plex/backup-plex.sh
+/usr/bin/wget https://raw.githubusercontent.com/Drazzilb08/extra-scripts/refs/heads/main/backup_plex.sh -O /mnt/user/appdata/scripts/backup-plex/backup_plex.sh
 echo Starting Plex Backup
-/mnt/fastdrive/userScripts/backup-plex/backup-plex.sh
+/mnt/user/appdata/scripts/backup-plex/backup_plex.sh
 echo Finished Plex Backup
