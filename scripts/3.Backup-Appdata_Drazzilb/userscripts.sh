@@ -8,7 +8,7 @@
 #                | |   | |                                                      | |
 #                |_|   |_|                                                      |_|
 echo Pulling latest version of Appdata Backup
-/usr/bin/wget https://raw.githubusercontent.com/Drazzilb08/userScripts/dev/scripts/backup-appdata/backup-appdata.sh -O /mnt/user/userScripts/backup-appdata/backup-appdata.sh
+/usr/bin/wget https://raw.githubusercontent.com/Drazzilb08/extra-scripts/refs/heads/main/backup_appdata.sh -O /mnt/user/appdata/scripts/backup-appdata/backup_appdata.sh
 echo Starting Appdata Backup
-/mnt/fastdrive/userScripts/backup-appdata/backup-appdata.sh
+/mnt/user/appdata/scripts/backup-appdata/backup_appdata.sh
 echo Finished Appdata Backup
