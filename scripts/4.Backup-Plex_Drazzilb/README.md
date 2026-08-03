@@ -12,6 +12,6 @@ This script is designed to backup your Essential Plex data on a cron schedule as
 1. backup-plex.sh - The actual script (*This can be outdated*), Always get the latest from the [Source](https://github.com/Drazzilb08/extra-scripts).
 1. userscripts.sh - The script I use to call it from the `UserScripts`.
 1. backup-plex.conf - The config file, edit to your own needs.
-1. plex-bloat-fix.py - Removes unneeded image files (Posters/Title Cards) from plex, Always get the latest from the [Source](https://github.com/Kometa-Team/ImageMaid).
-1. .env - The config file for the `plex-bloat-fix.py` please [usage](https://github.com/Kometa-Team/ImageMaid#usage) for all the settings.
-1. requirements.txt - This is needed so `plex-bloat-fix.py` can run (I run it from the `UserScripts` using the [Install Plex API](https://github.com/TRaSH-/userScripts-and-Configs/tree/main/scripts/Install-qBittorrent-API)
+1. imagemaid.py - Removes unneeded image files (Posters/Title Cards) from plex, Always get the latest from the [Source](https://github.com/Kometa-Team/ImageMaid).
+1. .env - The config file for the `imagemaid.py` please [usage](https://github.com/Kometa-Team/ImageMaid#usage) for all the settings.
+1. requirements.txt - This is needed so `imagemaid.py` can run (I run it from the `UserScripts` using the [Install Plex API](https://github.com/TRaSH-/userScripts-and-Configs/tree/main/scripts/Install-qBittorrent-API)
